@@ -21,6 +21,9 @@ print("Last valid input: " + str(datetime.datetime.now()))
 print("Temperature: %-3.1f C" % result.temperature)
 print("Humidity: %-3.1f %%" % result.humidity)
 
+Hum=result.humidity
+count=time(300)
+
 time.sleep(6)
 
 except KeyboardInterrupt:
@@ -29,9 +32,8 @@ GPIO.cleanup()
 
 &&& sending email code &&&
 
-if Humidity>80% :    //condition
-  time.sleep(300)
-if Humidity >80% :
+if Hum>80% and count>300:    //condition
+
   //when humidity is greater than 80% and then sleep time for 300 second again if humidity is greater than 80% then email is send.
   
  //Email code
