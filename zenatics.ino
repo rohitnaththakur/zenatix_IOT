@@ -8,13 +8,14 @@
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "Rahul Redmi";
-char pass[] = "7678635151";
+char ssid[] = "wifi name";
+char pass[] = "wifi password*";
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
 char username[] = "c68e5940-20d6-11eb-883c-638d8ce4c23d";
-char Mqtt_password[] = "d41ea2db2e09c7aab609f66e9ba896ae4846a190";
+char Mqtt_password[] = "d41ea2db2e09c7aab609f66e9ba896ae4846a190";   //this is my identity one should use its own MQTT 
 char Client_id[] = "9aa55d10-219e-11eb-b767-3f1a8f1211ba";
+
  DHT dht(2,DHT11);
 
 void setup() {
