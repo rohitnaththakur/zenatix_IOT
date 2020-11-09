@@ -1,6 +1,6 @@
 # zenatics_IOT
 
-# IOT ESP8266 file is having code for reciving the data from DHTT 11 Sensor 
+# Zenatics.ino file is having code for reciving the data from DHTT 11 Sensor 
 
 # It is done on Aurino IDE software 
 
