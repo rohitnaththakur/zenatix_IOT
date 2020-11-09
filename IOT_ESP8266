@@ -1,0 +1,61 @@
+import RPi.GPIO as GPIO
+import dht11
+import time
+import datetime
+
+import smtplib
+
+# initialize GPIO
+GPIO.setwarnings(True)
+GPIO.setmode(GPIO.BCM)
+
+# read data using pin 14
+instance = dht11.DHT11(pin=14)
+
+try:
+while True:
+result = instance.read()
+if result.is_valid():
+print("Last valid input: " + str(datetime.datetime.now()))
+
+print("Temperature: %-3.1f C" % result.temperature)
+print("Humidity: %-3.1f %%" % result.humidity)
+
+time.sleep(6)
+
+except KeyboardInterrupt:
+print("Cleanup")
+GPIO.cleanup()
+
+&&& sending email code &&&
+
+if Humidity>80% :    //condition
+  time.sleep(300)
+if Humidity >80% :
+  //when humidity is greater than 80% and then sleep time for 300 second again if humidity is greater than 80% then email is send.
+  
+ //Email code
+ 
+smtpUser = 'sender@gmail.com'
+smtpPass = '***********'
+
+toAdd = 'reciver@gmail.com'
+fromAdd = smtpUser
+
+subject = 'RPi data of sensor'
+header = 'To: ' + toAdd + '\n' + 'From: ' + fromAdd + '\n' + 'Subject: ' + subject
+body = 'humidity more than 80% for 5 minutes'
+
+print header + '\n' + body
+
+s = smtplib.SMTP('smtp.gmail.com',587)
+
+s.ehlo()
+s.starttls()
+s.ehlo()
+
+s.login(smtpUser, smtpPass)
+s.sendmail(fromAdd, toAdd, header + '\n' + body)
+
+s.quit()
+
