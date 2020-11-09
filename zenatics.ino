@@ -42,7 +42,7 @@ void loop() {
     Serial.print("temperature = ");
     Serial.print(temp); 
     Serial.println("C  ");
-     delay(60000);//Wait 5 seconds before accessing sensor again.
+     delay(60000);//Wait 60 seconds before accessing sensor again.
 }
 
 CAYENNE_IN(0)
