@@ -12,3 +12,9 @@
  
  # Its can be found in the trigger section in the cayenee site
  
+ # IOT_ESP8266 file is having python code of reciving the data from resberry pi gpio pin 14
+ 
+ # and it has code for sending the email if the conditons fails.
+ 
+ 
+ 
