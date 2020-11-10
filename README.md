@@ -1,4 +1,4 @@
-# zenatics_IOT
+# zenatix_IOT
 
 # Zenatics.ino file is having code for reciving the data from DHTT 11 Sensor 
 
